@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Message</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+        overflow: hidden;
+    }
+
+    .container {
+        position: relative;
+        animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    .balloons {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        color: #ff6f61;
+        font-size: 36px;
+        margin: 0 0 10px;
+        animation: bounce 1s ease-in-out infinite alternate;
+    }
+
+    p {
+        color: #333;
+        font-size: 18px;
+        margin: 0;
+        animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateX(-50%) translateY(0);
+        }
+        50% {
+            transform: translateX(-50%) translateY(-20px);
+        }
+        100% {
+            transform: translateX(-50%) translateY(0);
+        }
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <img class="balloons" src="https://emojicdn.elk.sh/🎈?style=twitter" alt="Balloons">
+        <div class="message">
+            <h1>Happy Birthday Joshua!</h1>
+            <p>Wishing myself a new age filled with joy and laughter.</p>
+        </div>
+    </div>
+
+    <script>
+        // You can add additional JavaScript logic or animations here if needed
+    </script>
+</body>
+</html>

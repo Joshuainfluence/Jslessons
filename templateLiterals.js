@@ -33,3 +33,5 @@ myNumCel = myNum.toLocaleString(undefined, {style: "unit", unit: "celsius"})
 console.log(myNumNgn);
 console.log(myNumUS);
 console.log(myNumCel);
+
+
